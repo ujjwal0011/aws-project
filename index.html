@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Inventory</h1>
+
+        <h2>Create Product</h2>
+        <input type="text" id="create-product-id" placeholder="Product ID">
+        <input type="text" id="create-product-name" placeholder="Product Name">
+        <input type="number" id="create-product-price" placeholder="Price">
+        <input type="text" id="create-product-color" placeholder="Color">
+        <input type="number" id="create-product-inventory" placeholder="Inventory">
+        <button onclick="createProduct()">Create Product</button>
+
+        <h2>Update Product</h2>
+        <input type="text" id="update-product-id" placeholder="Product ID">
+        <input type="text" id="update-key" placeholder="Update Key">
+        <input type="text" id="update-value" placeholder="Update Value">
+        <button onclick="updateProduct()">Update Product</button>
+
+        <h2>Delete Product</h2>
+        <input type="text" id="delete-product-id" placeholder="Product ID">
+        <button onclick="deleteProduct()">Delete Product</button>
+
+        <h2>Get Product</h2>
+        <input type="text" id="get-product-id" placeholder="Product ID">
+        <button onclick="getProduct()">Get Product</button>
+        <div id="product-details" class="output"></div>
+
+        <h2>All Products</h2>
+        <button onclick="getAllProducts()">Get All Products</button>
+        <div id="all-products" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
