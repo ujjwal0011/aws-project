@@ -1,4 +1,4 @@
-const API_URL = 'https://jlxoqgl9mh.execute-api.eu-north-1.amazonaws.com/prod';
+const API_URL = 'https://abc.execute-api.eu-north-1.amazonaws.com/prod';
 
 async function createProduct() {
     const productId = document.getElementById('create-product-id').value;
